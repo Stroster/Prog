@@ -15,13 +15,14 @@ public class JavaApplication1 {
     public static void main(String[] args) 
     {
         Scanner input = new Scanner(System.in);
+        
         printMessage();
         
         System.out.println("\nEnter your name: ");
-        String name = input.nextInt();
+        String name = input.nextLine();
         
         System.out.println("Enter your age: ");
-        int age = input.nextInt;
+        int age = input.nextInt();
                 
         System.out.println("Enter your grade (A-F): ");  
         char grade = input.next().charAt(0);
@@ -29,11 +30,14 @@ public class JavaApplication1 {
         System.out.println("Are you a student? (true/false): ");
         boolean isStudent = input.nextBoolean();
         
+        System.out.print("Enter a price value (e.g. 19.99)");
+        double price = input.nextDouble();
+        
         DifferentDataTypes(name, age, grade, isStudent, price);
         
         //Calling methods from other class
-        ConstantandVariables.MyMethod(input);
-        ConstantandVariables.SecondMethod();
+        ConstantsandVariables.MyMethod(input);
+        ConstantsandVariables.SecondMethod();
         
         Anotherone.ConstantAndVariables(input);
         
