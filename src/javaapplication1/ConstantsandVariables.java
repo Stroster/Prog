@@ -1,5 +1,6 @@
 package javaapplication1;
 
+import java.util.Scanner;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -9,28 +10,27 @@ package javaapplication1;
  *
  * @author Alex
  */
-public class ConstantsandVariables 
-{
+public class ConstantsandVariables {
   static final double MIN_VALUE = 30;
   static String greeting = "Good day";     
   
-//-------------------------My Method-------------------------------------//
-    public static void MyMethod()
-    {
+    public static void MyMethod(Scanner input) {
         final int MAX_VALUE = 20;
-        double result = 0;
-        
-        result = MAX_VALUE + 4;
-        
+
+        System.out.println("\nEnter a number to add to MAX_VALUE (20): ");
+        double number = input.nextDouble();
+
+        double result = MAX_VALUE + number;
+
         System.out.println("The result is " + result);
     }
     //------------------------------------------------------------------------//
     
-    public static void SecondMethod()
-    {
-        System.out.println(greeting);
-        System.out.println(MIN_VALUE);
+    public static void SecondMethod() {
+        System.out.println("\n=> Displaying Constants and Variables");
+        System.out.println("Greeting: " + greeting);
+        System.out.println("Minimum Value: " + MIN_VALUE);
     }        
 }
 
-//-----------------------------Finally Done----------------------------------//
+//-----------------------------Almost there----------------------------------//
