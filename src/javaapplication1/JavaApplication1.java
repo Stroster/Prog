@@ -14,34 +14,45 @@ public class JavaApplication1 {
     public static void main(String[] args) 
     {
         printMessage();
-        DifferentDataTypes();
-        ConstantsandVariables.MyMethod();
-        ConstantsandVariables.SecondMethod();
+        
+        System.out.println("\nEnter your name: ");
+        String name = input.nextInt();
+        
+        System.out.println("Enter your age: ");
+        int age = input.nextInt;
+                
+        System.out.println("Enter your grade (A-F): ");  
+        char grade = input.next().charAt(0);
+        
+        System.out.println("Are you a student? (true/false): ");
+        boolean isStudent = input.nextBoolean();
+        
+        DifferentDataTypes(name, age, grade, isStudent, price);
+        
+        //Calling methods from other class
+        ConstantandVariables.MyMethod(input);
+        ConstantandVariables.SecondMethod();
+        
+        Anotherone.ConstantAndVariables(input);
+        
+        input.close();
     }
     //----------------------------------------------------------------------//
     
-    //----------------------Generate Method-------------------------------//
+    
     private static void printMessage()
     {
-         System.out.println("Hello World");
+         System.out.println("=== Welcome to my Java Application ===");
     
     } 
     //-----------------------------------------------------------------//
     
-    //-------------Method to demonstrate different data types-----------------//
-    private static void DifferentDataTypes()
-    {
-        //Declaring varibales of different data types
-        int age = 30;
-        double price = 19.99;
-        boolean isStudent = true;
-        char grade = 'A';
-        String name = "Wild Banana";
-        
-        System.out.println(name + "is " + age + " years old, is a student " + 
-                isStudent + ", and has a grade: " + grade);
+    private static void DifferentDataTypes(String name, int age, char grade, boolean isStudent, double price) {
+        System.out.println("\n=> User Information:");
+        System.out.println(name + " is " + age + " years old, is a student: " + isStudent +
+                ", has a grade: " + grade + ", and a price value of: R" + price);
     }
     //-----------------------------------------------------------------------//
 }
 
-//--------------------------Wow im done--------------------------------------//
+//--------------------------Wow im getting somewhere--------------------------//
