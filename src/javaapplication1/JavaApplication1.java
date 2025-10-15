@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package javaapplication1;
+
 import java.util.Scanner;
 /**
  *
@@ -13,6 +14,7 @@ public class JavaApplication1 {
     //---------------------------Main Method-------------------------//
     public static void main(String[] args) 
     {
+        Scanner input = new Scanner(System.in);
         printMessage();
         
         System.out.println("\nEnter your name: ");
